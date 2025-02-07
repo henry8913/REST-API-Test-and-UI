@@ -79,13 +79,16 @@ async function createRecord() {
     }
 }
 
-// 🔹 Funzione per caricare i dati nei campi input per la modifica
+// 🔹 Funzione per caricare i dati nei campi input per la modifica e auto-scroll in alto
 function loadRecord(id, name, description, price) {
     document.getElementById("recordId").value = id;
     document.getElementById("name").value = name;
     document.getElementById("description").value = description;
     document.getElementById("price").value = price;
     document.getElementById("updateButton").disabled = false;
+
+    // 🆕 Auto-scroll fluido alla sezione "Gestisci un elemento"
+    document.querySelector(".card").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 // 🔹 Funzione per aggiornare un record (PUT)
@@ -159,7 +162,3 @@ function resetForm() {
 
 // 🚀 Carica i dati all'avvio
 window.onload = fetchRecords;
-
-
-
-
