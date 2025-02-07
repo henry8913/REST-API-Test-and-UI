@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+button {
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.table {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 12px;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+    }
+    .card {
+        width: 60%;
+        margin: 0 auto;
+    }
+    table {
+        width: 80%;
+        margin: 0 auto;
+    }
+    td:last-child {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .btn {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 728px) {
+    .container {
+        max-width: 90%;
+    }
+    .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+    table {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 728px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .table {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 10px;
+        font-size: 16px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td:last-child {
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .record-id {
+        font-size: 14px;
+        font-weight: bold;
+        color: #007bff;
+        text-transform: uppercase;
+    }
+
+    tr::before {
+        content: "ID: " attr(data-id);
+        font-size: 14px;
+        font-weight: bold;
+        color: #007bff;
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+
