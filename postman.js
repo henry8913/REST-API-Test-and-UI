@@ -8,7 +8,6 @@
 
 //const baseEndpoint = 'https://striveschool-api.herokuapp.com/api/agenda';
 
-
 const BASE_URL = "https://striveschool-api.herokuapp.com/api/agenda";
 
 // 🔹 Funzione per ottenere tutti i record (GET)
